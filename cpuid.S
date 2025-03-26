@@ -65,3 +65,6 @@ _cpuid:
 	.subsections_via_symbols
 
 #endif
+#if defined(__zarch__)
+        .section        .note.GNU-stack,"",@progbits
+#endif
